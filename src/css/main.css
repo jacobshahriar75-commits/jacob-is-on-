@@ -1,0 +1,614 @@
+@import "tailwindcss";
+@font-face {
+    font-family: shabnam;
+    src: url(../fonts/Shabnam.eot);
+    src: url(../fonts/Shabnam.ttf);
+    src: url(../fonts/Shabnam.woff);
+    src: url(../fonts/Shabnam.woff2);
+}
+@theme{
+    --font-shabnam:shabnam;
+    
+}
+/* auto advertizment */
+.advertsment{
+  max-width: 1210px;
+  width: 83%;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  .advertsment-center{
+    width: 100%;
+    height: 36px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    .paro{
+      margin-top: 25px;
+      font-size: 24px;
+      font-family: shabnam;
+      color: #000000de;
+      font-weight: bold;
+
+    }
+  }
+  .adverb{
+    width: 100%;
+    height: 214px;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+     
+      
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     
+    }
+    .swiper-button-next , .swiper-button-prev{
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      background-color: lightgreen;
+      
+      svg{
+        width: 14px;
+        height:14px;
+        color: gray;
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+
+/* end auto advertizment */
+
+html,body{
+  scroll-behavior: smooth;
+  
+}
+
+/* auto story */
+.main{
+  max-width: 1270px;
+  width: 80%;
+  
+  margin: 0 auto;
+  margin-top: 80px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  @media (max-width: 768) {
+    .swiper {
+      height: 300px;
+    }
+  }
+  .swiper {
+    @media (max-width: 768) {
+      .swiper {
+        height: 300px;
+      }
+    }
+  }
+
+  .swiper-slide {
+  
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .swiper-slide img {
+    display: block;
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+
+}
+
+  /* end auto story */
+
+  /* active */
+
+  .activ{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 546px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;    
+    .active-center{
+      width: 1280px;
+      height: 84px;
+      background-color: #E2E2E2;
+      border-top-left-radius:15px ;
+      border-top-right-radius: 15px;
+      .active-center-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 55px;
+        padding-top: 25px;
+        box-sizing: border-box;
+      
+        .paragraph{
+          font-size: 24px;
+          font-family: shabnam;
+          color: #757575;
+          font-weight: bold;
+        }
+        .paragraph-b{
+          font-size: 16px;
+          font-family: shabnam;
+          color: #4e5e60;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap:8px ;
+          .fa-angle-left{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 0 5px;
+          }
+        }
+      }
+      .active-product{
+        width: 100%;
+        height: 500px;
+        background-color: #E2E2E2;
+        border-bottom-left-radius:15px ;
+        border-bottom-right-radius:15px ;
+        .swiper {
+          width: 96%;
+          height: 93%;
+          padding: 20px 20px;
+          padding-bottom: 25px;
+          box-sizing: border-box;
+          
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          .swiper-slide-items{
+            width: 100%;
+            height: 100%;
+            
+            .swiper-slide-top{
+              width: 100%;
+              height: 272px;
+              display: flex;
+              justify-content: center;
+              
+              img{
+                width: 272px;
+                height: 272px;
+              }         
+
+            }
+            .swiper-slide-center{
+              width: 256px;
+              height: 18px;
+              
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              margin-top: 18px;
+              .paragraph-f{
+                font-size: 12px;
+                font-family: shabnam;
+                color: #a3a3a3;
+
+              }
+            }
+            .swiper-slide-bottom{
+              width: 256px;
+              height: 28px;
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              margin-top: 10px;
+              .paragraph-g{
+                font-size: 14px;
+                font-family: shabnam;
+                color: #000000de;
+
+              }
+            }
+            .swiper-slide-price{
+              width: 256px;
+              height: 20px;
+              display: flex;
+              justify-content: flex-end;
+              margin: 0 auto;
+              position: relative;
+              top: 8px;
+
+              .span-y{
+                font-size: 14px;
+                font-family: shabnam;
+                color: #a3a3a3;
+                text-decoration: line-through;
+              }
+            }
+            .swiper-slide-real{
+              width: 256px;
+              height:42px ;
+              
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              margin: 0 auto;
+              margin-top: 3px;
+              column-gap: 9px;
+              .span-w{
+                font-size: 20px;
+                font-family: shabnam;
+                color: #0a5abd;
+                width: 82.61px;
+                height: 30px;
+              }
+              .toman{
+                font-size: 12px;
+                font-family: shabnam;
+                color: #a3a3a3;
+                width: 27.11px;
+                height: 18px;
+              }
+
+            }
+          }
+          
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        
+        .swiper-button-next , .swiper-button-prev{
+          width: 32px;
+          height: 32px;
+          border-radius: 50px;
+          background-color: white;
+          
+          svg{
+            width: 12px;
+            height: 12px;
+            color: gray;
+          }
+        }
+      }
+    }
+  }  
+   /* end active */
+
+
+   /* slider */
+
+   .slider{
+    overflow-x: hidden;
+    max-width: 1260px;
+    width: 83%;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    
+    .paragraph-pro{
+      font-size: 24px;
+      font-family: shabnam;
+      color: #757575;
+      font-weight: bold;
+    }
+   }
+    .slider-center{
+      max-width: 1290px;
+      width: 85%;
+      height: 154px;
+      background-color: white;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      
+      .swiper {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        padding: 25px 18px;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        border: 1px solid lightgray;
+        outline: none;
+        transition: all 300ms;
+        &:hover{
+          box-shadow: 0 0 24px gray;
+          
+        }
+        img{
+          width: 96px;
+          height: 96px;
+        }
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+      }
+      .swiper-button-next , .swiper-button-prev{
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        background-color: lightgray;
+        
+        svg{
+          width: 12px;
+          height: 12px;
+          color: gray;
+        }
+      }
+    }
+   /* end slider */
+   /* lastone */
+   .one{
+    overflow-x: hidden;
+    max-width: 1260px;
+    width: 83%;
+    height: 84px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    .pg{
+      font-size: 24px;
+      font-family: shabnam;
+      color: #757575;
+      font-weight: bold;
+    }
+    .p{
+      font-size: 16px;
+      font-family: shabnam;
+      color:#757575 ;
+       
+      .fa-angle-left{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0 5px;
+        position: relative;
+        right: 3px; 
+      }
+    }
+   }
+   .one-center{
+    max-width: 1260px;
+    width:83%;
+    height: 257px;
+    
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+      
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      
+     
+      .swiper-slide-item{
+        width: 296px;
+        height: 85%;
+        background-color: lightgray;
+        border-radius: 12px;
+        transition: all 300ms linear;
+        &:hover{
+          box-shadow: 0 0 28px lightgray;
+        }
+       .top{
+        width: 100%;
+        height: 60%;
+        border-radius: 15px;
+        img{
+          width: 296px;
+          height: 147px;
+          object-fit: cover;
+          margin: 0 auto;
+        }
+       }
+       .bottom{
+        width: 264px;
+        height:40%;
+        margin: 0 auto; 
+        
+        p{
+          font-size: 14px;
+          font-family: shabnam;
+          line-height: 27px;
+          margin-top: 30px;
+          transition: 300ms;
+          &:hover{
+            color: blue;
+          }
+        }
+
+       }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   }
+   /* end lastone */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*super */
+    .super{
+      overflow-x: hidden;
+      max-width: 1300px;
+      width: 95%;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
+      
+      @media (max-width: 768px) {
+        .myfun {
+          display: ;
+        }
+      }
+        
+      
+      .swiper {
+        width: 100%;
+        height: 100%;  
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: lightgray;
+        border-radius: 10px;
+        align-items: center;
+        transition: all 300ms linear;
+        &:hover{
+          
+          transform: 26px 0 0 0;
+        }
+        .swiper-slide-item{
+          width: 100%;
+          height: 50%;
+          transition: all 300ms linear;
+          &:hover{
+            box-shadow: 0 0 28px gray;
+          }
+          
+          .Z{
+            font-size: 18px;
+            font-family: shabnam;
+            color: #000000de;
+            font: bold;
+            display: flex;
+            margin-right: 8px;
+            column-gap: 12px;
+            padding-top: 13px;
+            img{
+              width: 19px;
+              height: 19px;
+
+              
+              
+            }
+
+          }
+        }
+        .swiper-slide-shir{
+          width: 100%;
+          height: 50%;
+          transition: all 300ms linear;
+          &:hover{
+            box-shadow: 0 0 28px gray;
+          }
+          display: flex;
+          align-items: center;
+          .U{
+            font-size: 18px;
+            color:gray ;
+            font-family: shabnam;
+            padding-right: 40px;
+          }
+        }
+
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       
+      }
+      .swiper-button-next , .swiper-button-prev{
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      
+        
+        
+        svg{
+          width: 14px;
+          height:14px;
+          color: gray;
+          font-weight: bold;
+        }
+      }
+
+    }
+   
